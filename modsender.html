@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script src="js/angularplasmid.complete.min.js"></script>
+    </head>
+    <body>
+        <style>
+            @import url("http://fonts.googleapis.com/css?family=Lato:300,400,700|Donegal+One|Source+Code+Pro:400");
+            body {font-family: 'Lato';font-weight:400;}
+            svg {padding-left: 12px;}
+            .boundary {stroke-dasharray:2,2;stroke-width:2px}
+            .mdlabel {font-size:12px}
+            .smlabel {font-size:8px}
+            .white {fill:#fff}
+            .red {fill:rgb(192,64,64)}
+            .purple {fill:rgb(192,64,192)}
+            .blue {fill:rgb(64,192,192)}
+            .green {fill:rgb(64,192,64)}
+            .gold {fill:rgb(192,128,64)}
+        </style>
+        <plasmid sequencelength="3115" plasmidheight="375" plasmidwidth="375">
+            <plasmidtrack trackstyle="fill:#ccc" width="5" radius="120"></plasmidtrack>
+            <plasmidtrack trackstyle="fill:rgba(225,225,225,0.5)" radius="110">
+                <tracklabel text="Modular Sender" labelstyle='font-size:14px;font-weight:400' vadjust="-10"></tracklabel>
+                <tracklabel text="Bba_K2033011" labelstyle='font-size:14px;font-weight:400' vadjust="5"></tracklabel>
+                <tracklabel text="3115 bp" labelstyle='font-size:12px' vadjust="20"></tracklabel>
+                
+                <!-- draw the main markers and labels -->
+                <trackmarker start="730" end="900" markerstyle="fill:rgba(85,170,0,0.9)" arrowendlength="" arrowstartlength="">
+                    <markerlabel type="path" class="mdlabel white" text="Term"></markerlabel>
+                </trackmarker>
+                <trackmarker start="105" end="700" markerstyle="fill:rgba(170,0,85,0.9)" arrowendlength="" arrowstartlength="">
+                    <markerlabel type="path" class="mdlabel white" text="mCherry"></markerlabel>
+                </trackmarker>
+                <trackmarker start="3030" end="75" markerstyle="fill:rgba(0,85,170,0.9)" arrowendlength="" arrowstartlength="">
+                    <markerlabel type="path" class="mdlabel white" text="RBS"></markerlabel>
+                </trackmarker>
+                <trackmarker start="2400" end="3000" markerstyle="fill:rgba(85,0,170,0.9)" arrowendlength="4" arrowstartlength="">
+                    <markerlabel type="path" class="mdlabel white" text="Variable Synthase"></markerlabel>
+                </trackmarker>
+                <trackmarker start="2210" end="2370" markerstyle="fill:rgba(0,85,170,0.9)" arrowendlength="" arrowstartlength="">
+                    <markerlabel type="path" class="mdlabel white" text="RBS"></markerlabel>
+                </trackmarker>
+
+                <trackmarker start="1980" end="2180" markerstyle="fill:rgba(170,85,0,0.9)" arrowendlength="4" arrowstartlength="">
+                    <markerlabel type="path" class="mdlabel white" text="pTetR"></markerlabel>
+                </trackmarker>
+               
+
+
+                <!-- draw the marker shadows -->
+                <trackmarker start="730" end="900" markerstyle="fill:rgba(238,255,221,0.6)" wadjust="-5" vadjust="25"></trackmarker>
+                <trackmarker start="105" end="700" markerstyle="fill:rgba(255,221,238,0.6)" wadjust="-5" vadjust="25"></trackmarker>
+                <trackmarker start="3030" end="75" markerstyle="fill:rgba(221,238,255,0.6)" wadjust="-5" vadjust="25"></trackmarker>
+                <trackmarker start="2400" end="3000" markerstyle="fill:rgba(238,221,255,0.6)" wadjust="-5" vadjust="25"></trackmarker>
+                <trackmarker start="2210" end="2370" markerstyle="fill:rgba(221,238,255,0.6)" wadjust="-5" vadjust="25"></trackmarker>
+                <trackmarker start="1980" end="2180" markerstyle="fill:rgba(255,238,221,0.6)" wadjust="-5" vadjust="25"></trackmarker>                
+
+                <!-- draw the region boundaries lines ("cut sites") -->
+                <trackmarker start="2400" markerstyle="stroke:rgba(85,0,170,0.9)" class="boundary" wadjust="20">
+                    <markerlabel class="mdlabel black" text="EcoRI" vadjust="40"></markerlabel>
+                </trackmarker>
+                <trackmarker start="3000" markerstyle="stroke:rgba(85,0,170,0.9)" class="boundary" wadjust="20">
+                    <markerlabel class="mdlabel black" text="XbaI" vadjust="30"></markerlabel>
+                </trackmarker>
+
+
+            </plasmidtrack>
+        </plasmid>
+    </body>
+<html>
